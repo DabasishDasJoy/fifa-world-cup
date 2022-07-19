@@ -23,17 +23,17 @@ body {
 .flex-container {
     display: flex;
     justify-content: center;
-    
+
 }
 
-.grid-container{
+.grid-container {
     display: grid;
 }
 
 .section-wrapper {
     width: 90%;
     margin: 30px;
-    background-color: aqua;
+    
 }
 
 .half-width {
@@ -42,11 +42,13 @@ body {
     text-align: left;
     margin: auto;
 }
-a{
+
+a {
     text-decoration: none;
-    color:#161616;
+    color: #161616;
     background-color: #FFFFFF;
 }
+
 /* ====================================================
             ******** Top Banner Style *********
 ==================================================== */
@@ -55,7 +57,8 @@ a{
     background-color: #161616;
     border-radius: 30px;
 }
-.top-banner .desc-wrapper{
+
+.top-banner .desc-wrapper {
     padding-left: 106px;
 }
 
@@ -63,20 +66,23 @@ a{
     font-size: 50px;
     font-weight: 700;
 }
-.top-banner .top-banner-desc{
+
+.top-banner .top-banner-desc {
     font-size: 16px;
     font-weight: 400;
 }
-.top-banner .image-wrapper{
+
+.top-banner .image-wrapper {
     justify-content: center;
     align-items: center;
 }
 
-.top-banner .image-wrapper img{
+.top-banner .image-wrapper img {
     padding-top: 20px;
     width: 80%;
 }
-.link-button{
+
+.link-button {
     font-size: 20px;
     font-weight: 400;
     background-color: #DD0000;
@@ -92,51 +98,90 @@ a{
 /* ====================================================
             ******** Aside Style *********
 ==================================================== */
-
-.side-nav{
+.main-section{
+    grid-template-columns: 312px 1fr;
+    column-gap: 20px;
+}
+.side-nav {
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-evenly;
     height: 312px;
-    width: 312px;
     background-color: #161616;
     border-radius: 10px;
 }
 
 .side-nav a{
-    
+    display: block;
     font-size: 20px;
     font-weight: 500;
-    width: 252px;
+    width: 80%;
     text-align: center;
     padding-top: 17px;
     padding-bottom: 17px;
     border-radius: 10px;
+    
 }
+
 /* ====================================================
             ******** Blogs Style *********
 ==================================================== */
-
-.main-section .blogs{
-    flex-grow: 1;
+.blogs{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
-.blogs .blog-thumbnail img{
+.blogs .blog-details, .blog-info{
+    width: 90%;
+}
+
+.blogs .blog {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-thumbnail{
+    margin-bottom: 10px;
+}
+.blogs .blog-thumbnail img {
     width: 100%;
 }
 
-.blogs .blog-details a{
+.blogs .blog-details a {
     border: 1px solid #161616;
     border-radius: 5px;
+    padding: 4px 16px;
+    
 }
-.blogs .blog-details h1{
-    color:#161616;
+
+.blogs .blog-details h1 {
+    color: #161616;
 }
 
 /* ====================================================
             ******** Footer *********
 ==================================================== */
-
-
+footer{
+    background-color: #161616;
+}
+footer h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.footer-links{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer-links a{
+    color: #FFFFFF;
+    background-color: #161616;
+    font-size: 16px;
+    font-weight: 500;
+}
 /* ====================================================
             ******** Utilities *********
 ==================================================== */
