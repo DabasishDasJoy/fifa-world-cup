@@ -87,6 +87,7 @@ a {
     font-weight: 400;
     background-color: #DD0000;
     padding: 10px 30px;
+    margin-top: 10px;
     border-radius: 5px;
     color: #FFFFFF;
 }
@@ -122,7 +123,10 @@ a {
     border-radius: 10px;
     
 }
-
+.side-nav #active{
+    background-color:#DD0000;
+    color: #FFFFFF;
+}
 /* ====================================================
             ******** Blogs Style *********
 ==================================================== */
@@ -140,6 +144,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 .blog-thumbnail{
@@ -159,11 +164,23 @@ a {
 .blogs .blog-details h1 {
     color: #161616;
 }
-
+.blog-info i{
+    color: rgba(22, 22, 22, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 20px;
+}
 /* ====================================================
             ******** Footer *********
 ==================================================== */
 footer{
+    flex-direction: column;
+    align-items: center;
+    background-color: #161616;
+    height: 400px;
+}
+footer a{
+    color: #FFFFFF;
     background-color: #161616;
 }
 footer h1{
@@ -172,16 +189,33 @@ footer h1{
     font-weight: 600;
     color: #FFFFFF;
 }
+/* footer hr{
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+} */
 .footer-links{
+    padding: 30px;
+    width: 80%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 .footer-links a{
-    color: #FFFFFF;
-    background-color: #161616;
     font-size: 16px;
     font-weight: 500;
 }
+.social-links{
+    margin-top: 20px;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.social-links a{
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+
 /* ====================================================
             ******** Utilities *********
 ==================================================== */
