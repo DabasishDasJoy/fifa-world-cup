@@ -219,7 +219,9 @@ footer h1{
     justify-content: space-evenly;
     font-size: 24px;
 }
-
+#view-button{
+    display: none;
+}
 /* ====================================================
             ******** Match Style *********
 ==================================================== */
@@ -272,8 +274,17 @@ a:hover{
     /* ====================================================
             ******** Media Queries *********
 ==================================================== */
-    
+
+/* ====================================================
+            ******** Mobile Devices *********
+==================================================== */
+
+
 @media only screen and (max-width:767px) {
+    /* ====================================================
+            ******** Top Banner *********
+==================================================== */
+
     .top-banner{
         flex-direction: column;
         align-items: center;
@@ -304,12 +315,19 @@ a:hover{
         justify-content: center;
         align-items: baseline;
     }
+
+/* ====================================================
+            ******** Main Section *********
+==================================================== */
+
     .main-section{
         display: flex;
         flex-direction: column;
     }
 
     .side-nav{
+        margin-top: -20px;
+        margin-bottom: 10px;
         background-color: #FFFFFF;
     }
     .side-nav a{
@@ -319,7 +337,11 @@ a:hover{
     .blogs{
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
+/* ====================================================
+            ******** Footer *********
+==================================================== */
+
     .footer-links{
         flex-direction: column;
         align-items: center;
@@ -328,4 +350,55 @@ a:hover{
         margin-right: 20px;
         font-size: 24px;
     }
+}
+
+
+/* ====================================================
+            ******** Tablet Devices *********
+==================================================== */
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .main-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-nav{
+        flex-direction: row;
+        background-color: #FFFFFF;
+        justify-content: space-between;
+        height: initial;
+        margin-bottom: 50px;
+    }
+    .side-nav a{
+        border: 1px solid rgba(232, 232, 232, 1);
+        color: rgba(22, 22, 22, 1);
+        width:230px;  
+    }
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #view-button{
+        display: flex;
+    }
+    /* .side-nav {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 312px;
+        background-color: #161616;
+        border-radius: 10px;
+    }
+    
+    .side-nav a{
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        width: 80%;
+        text-align: center;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        border-radius: 10px;
+        
+    } */
 }
