@@ -103,6 +103,8 @@ a {
     margin-bottom: 20px;
     border-radius: 5px;
     color: #FFFFFF;
+    position: absolute;
+    transform-origin: 50% 5em;
 }
 
 /* ====================================================
@@ -308,11 +310,58 @@ a:hover {
     transition: 0.5s;
 }
 
-footer a:hover{
+footer a:hover {
     background-color: #FFFFFF;
     color: black;
     transition: 0.5s;
 }
+
+.top-banner:hover {
+    animation: banner 0.5 timing-function delay iteration-count direction fill-mode;
+}
+
+.top-banner:hover .link-button {
+    animation: shake 2s linear infinite;
+}
+.top-banner .link-button:hover{
+    animation-play-state: paused;
+}
+
+/* Keyframes */
+@keyframes shake {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+
 
 /* ====================================================
             ******** Media Queries *********
