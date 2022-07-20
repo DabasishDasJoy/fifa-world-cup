@@ -23,7 +23,6 @@ body {
 .flex-container {
     display: flex;
     justify-content: center;
-
 }
 
 .grid-container {
@@ -33,7 +32,6 @@ body {
 .section-wrapper {
     width: 90%;
     margin: 30px;
-    
 }
 
 .half-width {
@@ -75,6 +73,7 @@ a {
 .top-banner .image-wrapper {
     justify-content: center;
     align-items: center;
+    
 }
 
 .top-banner .image-wrapper img {
@@ -198,10 +197,11 @@ footer h1{
     width: 80%;
     border-top: 1px solid rgba(255, 255, 255, 0.1);;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     
 }
 .footer-links a{
+    margin: 15px 20px;
     font-size: 16px;
     font-weight: 500;
 }
@@ -217,5 +217,47 @@ footer h1{
 }
 
 /* ====================================================
-            ******** Utilities *********
+            ******** Match Style *********
+==================================================== */
+
+.matches .match{
+    flex-direction: column;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.match .match-details{
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
+.match-thumbnail{
+    grid-template-columns: 1fr 0.5fr 1fr;
+}
+
+.match-thumbnail img{
+    width: 100%;
+}
+.match-thumbnail p{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+    text-align: center;
+}
+.match-details h3+p{
+    text-align: center;
+}   
+
+.match-details h3{
+    font-size: 20px;
+}
+.match-details p{
+    font-size: 16px;
+} 
+
+
+/* ====================================================
+            ******** Match Style *********
 ==================================================== */
