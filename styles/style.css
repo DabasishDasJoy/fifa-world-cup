@@ -246,6 +246,8 @@ footer h1 {
 .social-links a {
     justify-content: space-evenly;
     font-size: 24px;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
 #view-button {
@@ -306,13 +308,13 @@ a:hover {
     /* box-shadow: inset 50px 0 0 0 #54b3d6;  */
     background-color: rgb(7, 7, 101);
     color: #FFFFFF;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 footer a:hover {
     background-color: #FFFFFF;
     color: black;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .top-banner:hover {
@@ -489,26 +491,7 @@ footer a:hover {
 
     #view-button {
         display: flex;
+        margin-bottom: 50px;
     }
 
-    /* .side-nav {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 312px;
-        background-color: #161616;
-        border-radius: 10px;
-    }
-    
-    .side-nav a{
-        display: block;
-        font-size: 20px;
-        font-weight: 500;
-        width: 80%;
-        text-align: center;
-        padding-top: 17px;
-        padding-bottom: 17px;
-        border-radius: 10px;
-        
-    } */
 }
