@@ -14,7 +14,6 @@
             ******** Utilities *********
 ==================================================== */
 
-
 body {
     width: 100%;
     margin: 0 auto;
@@ -32,10 +31,10 @@ body {
 
 .section-wrapper {
     margin: 30px;
+    width: 90%;
 }
 
 .half-width {
-    /* border: var(--main-border); */
     width: 50%;
     text-align: left;
     margin: auto;
@@ -56,33 +55,44 @@ a {
     border-radius: 30px;
 }
 
-.half-width{
+.half-width {
     justify-content: center;
 }
 
-.desc-wrapper{
+.desc-wrapper {
     padding-left: 80px;
 }
 
-.desc-wrapper, .image-wrapper{
+.desc-wrapper,
+.image-wrapper {
     width: 80%;
 }
+
 .top-banner .top-banner-title {
-    font-size:  3.2552083333333335vw;
+    font-size: 3.2552083333333335vw;
     font-weight: 700;
+    text-align: left;
 }
+
 .top-banner .top-banner-desc {
     font-size: 80%;
     font-weight: 400;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
-.image-wrapper{
+
+.image-wrapper {
     padding-top: 20px;
     justify-content: center;
     align-items: baseline;
 }
-.image-wrapper img{
+
+.image-wrapper img {
     width: 100%;
 }
+
 .link-button {
     display: inline-block;
     font-size: 20px;
@@ -102,10 +112,11 @@ a {
 /* ====================================================
             ******** Aside Style *********
 ==================================================== */
-.main-section{
+.main-section {
     grid-template-columns: 312px 1fr;
     column-gap: 20px;
 }
+
 .side-nav {
     flex-direction: column;
     justify-content: space-around;
@@ -115,7 +126,7 @@ a {
     border-radius: 10px;
 }
 
-.side-nav a{
+.side-nav a {
     display: block;
     font-size: 20px;
     font-weight: 500;
@@ -124,20 +135,24 @@ a {
     padding-top: 17px;
     padding-bottom: 17px;
     border-radius: 10px;
-    
+
 }
-.side-nav #active{
-    background-color:#DD0000;
+
+.side-nav #active {
+    background-color: #DD0000;
     color: #FFFFFF;
 }
+
 /* ====================================================
             ******** Blogs Style *********
 ==================================================== */
-.blogs{
+.blogs {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
-.blogs .blog-details, .blog-info{
+
+.blogs .blog-details,
+.blog-info {
     width: 90%;
 }
 
@@ -150,9 +165,11 @@ a {
     padding-bottom: 20px;
 }
 
-.blog-thumbnail{
+.blog-thumbnail {
     margin-bottom: 10px;
+    width: 100%;
 }
+
 .blog .blog-thumbnail img {
     width: 100%;
 }
@@ -161,117 +178,143 @@ a {
     border: 1px solid #161616;
     border-radius: 5px;
     padding: 4px 16px;
-    
+
 }
 
 .blogs .blog-details h1 {
     color: #161616;
 }
-.blog-info i{
+
+.blog-info i {
     color: rgba(22, 22, 22, 0.7);
     font-size: 16px;
     font-weight: 400;
     margin-right: 20px;
 }
+
 /* ====================================================
             ******** Footer *********
 ==================================================== */
-footer{
+footer {
     flex-direction: column;
     align-items: center;
     background-color: #161616;
 }
-footer a{
+
+footer a {
     color: #FFFFFF;
     background-color: #161616;
 }
-footer h1{
+
+footer h1 {
     text-align: center;
     font-size: 40px;
     font-weight: 600;
     color: #FFFFFF;
 }
+
 /* footer hr{
     width: 80%;
     border: 1px solid rgba(255, 255, 255, 0.1);
 } */
-.footer-links{
+.footer-links {
     padding: 30px;
     width: 80%;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    ;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
-.footer-links a{
-    margin: 15px 20px;
+
+.footer-links a {
+    margin: 15px 15px;
     font-size: 16px;
     font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
-.social-links{
+
+.social-links {
     margin-top: 20px;
     width: 20%;
     justify-content: space-around;
     margin-bottom: 20px;
 }
 
-.social-links a{
+.social-links a {
     justify-content: space-evenly;
     font-size: 24px;
 }
-#view-button{
+
+#view-button {
     display: none;
 }
+
 /* ====================================================
             ******** Match Style *********
 ==================================================== */
 
-.matches .match{
+.matches .match {
     flex-direction: column;
     border: 1px solid #E8E8E8;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
 }
-.match .match-details{
+
+.match .match-details {
     justify-content: center;
     width: 90%;
     height: 90%;
 }
 
-.match-thumbnail{
+.match-thumbnail {
     grid-template-columns: 1fr 0.5fr 1fr;
 }
 
-.match-thumbnail img{
+.match-thumbnail img {
     width: 100%;
 }
-.match-thumbnail p{
+
+.match-thumbnail p {
     padding-left: 10px;
     padding-right: 10px;
     width: 50%;
     text-align: center;
 }
-.match-details h3+p{
-    text-align: center;
-}   
 
-.match-details h3{
+.match-details h3,
+p {
+    text-align: center;
+}
+
+.match-details h3 {
     font-size: 20px;
 }
-.match-details p{
+
+.match-details p {
     font-size: 16px;
-} 
+}
 
 
 /* ====================================================
             ******** Hover Style *********
 ==================================================== */
-a:hover{
-    box-shadow: inset 50px 0 0 0 #54b3d6; 
-
+a:hover {
+    /* box-shadow: inset 50px 0 0 0 #54b3d6;  */
+    background-color: rgb(7, 7, 101);
+    color: #FFFFFF;
+    transition: 0.5s;
 }
-    /* ====================================================
+
+footer a:hover{
+    background-color: #FFFFFF;
+    color: black;
+    transition: 0.5s;
+}
+
+/* ====================================================
             ******** Media Queries *********
 ==================================================== */
 
@@ -281,73 +324,88 @@ a:hover{
 
 
 @media only screen and (max-width:767px) {
+
     /* ====================================================
             ******** Top Banner *********
 ==================================================== */
+    .section-wrapper {
+        width: 100%;
+    }
 
-    .top-banner{
+    .top-banner {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         border-radius: 10px;
     }
-    .half-width{
+
+    .half-width {
         width: 70%;
         text-align: center;
     }
-    .top-banner .desc-wrapper{
+
+    .top-banner .desc-wrapper {
         padding-left: 0px;
         padding-top: 20px;
     }
-    .top-banner .desc-wrapper, .image-wrapper{
+
+    .top-banner .desc-wrapper,
+    .image-wrapper {
         width: 100%;
     }
+
     .top-banner .top-banner-title {
-        font-size:  24px;
+        font-size: 24px;
         text-align: center;
     }
+
     .top-banner .top-banner-desc {
         font-size: 12px;
         text-align: center;
     }
-    .top-banner .image-wrapper{
+
+    .top-banner .image-wrapper {
         padding-top: 15px;
         justify-content: center;
         align-items: baseline;
     }
 
-/* ====================================================
+    /* ====================================================
             ******** Main Section *********
 ==================================================== */
 
-    .main-section{
+    .main-section {
         display: flex;
         flex-direction: column;
     }
 
-    .side-nav{
+    .side-nav {
         margin-top: -20px;
         margin-bottom: 10px;
         background-color: #FFFFFF;
     }
-    .side-nav a{
+
+    .side-nav a {
         border: 1px solid rgba(232, 232, 232, 1);
         color: rgba(22, 22, 22, 1);
     }
-    .blogs{
+
+    .blogs {
         grid-template-columns: repeat(1, 1fr);
     }
 
-/* ====================================================
+    /* ====================================================
             ******** Footer *********
 ==================================================== */
 
-    .footer-links{
+    .footer-links {
         flex-direction: column;
         align-items: center;
     }
-    .social-links a{
+
+    .social-links a {
         margin-right: 20px;
+        margin-left: 20px;
         font-size: 24px;
     }
 }
@@ -357,30 +415,34 @@ a:hover{
             ******** Tablet Devices *********
 ==================================================== */
 @media only screen and (min-width:768px) and (max-width:991px) {
-    .main-section{
+    .main-section {
         display: flex;
         flex-direction: column;
     }
 
-    .side-nav{
+    .side-nav {
         flex-direction: row;
         background-color: #FFFFFF;
         justify-content: space-between;
         height: initial;
+        width: 100%;
         margin-bottom: 50px;
     }
-    .side-nav a{
+
+    .side-nav a {
         border: 1px solid rgba(232, 232, 232, 1);
         color: rgba(22, 22, 22, 1);
-        width:230px;  
+        width: 230px;
     }
-    .blogs{
+
+    .blogs {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #view-button{
+    #view-button {
         display: flex;
     }
+
     /* .side-nav {
         flex-direction: column;
         justify-content: space-around;
