@@ -4,12 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-:root {
-    --main-color: aqua;
-    --different-color: blue;
-    --main-border: 2px solid black;
-}
-
 /* ====================================================
             ******** Utilities *********
 ==================================================== */
@@ -48,6 +42,7 @@ a {
 
 /* ====================================================
             ******** Top Banner Style *********
+                           start
 ==================================================== */
 .top-banner {
     color: #FFFFFF;
@@ -107,17 +102,33 @@ a {
 }
 
 /* ====================================================
-            ******** Main Section Style *********
+            ******** Top Banner Style *********
+                           End
 ==================================================== */
 
+
+
+
 /* ====================================================
-            ******** Aside Style *********
+            ******** Main Section Style *********
+                           Start
 ==================================================== */
+
 .main-section {
     grid-template-columns: 312px 1fr;
     column-gap: 20px;
 }
+/* ====================================================
+            ******** Main Section Style *********
+                           End
+==================================================== */
 
+
+
+/* ====================================================
+            ******** Side Navigation Style *********
+                           Start
+==================================================== */
 .side-nav {
     flex-direction: column;
     justify-content: space-around;
@@ -143,9 +154,14 @@ a {
     background-color: #DD0000;
     color: #FFFFFF;
 }
+/* ====================================================
+            ******** Side Navigation Style *********
+                           End
+==================================================== */
 
 /* ====================================================
-            ******** Blogs Style *********
+            ******** Blog Style *********
+                        Start
 ==================================================== */
 .blogs {
     grid-template-columns: repeat(3, 1fr);
@@ -192,9 +208,16 @@ a {
     font-weight: 400;
     margin-right: 20px;
 }
+/* ====================================================
+            ******** Blog Style *********
+                        End
+==================================================== */
+
+
 
 /* ====================================================
-            ******** Footer *********
+            ******** Footer Style *********
+                        Start
 ==================================================== */
 footer {
     flex-direction: column;
@@ -214,15 +237,10 @@ footer h1 {
     color: #FFFFFF;
 }
 
-/* footer hr{
-    width: 80%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-} */
 .footer-links {
     padding: 30px;
     width: 80%;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    ;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -255,7 +273,14 @@ footer h1 {
 }
 
 /* ====================================================
-            ******** Match Style *********
+            ******** Footer Style *********
+                        End
+==================================================== */
+
+
+/* ====================================================
+            ******** Matches Style *********
+                        Start
 ==================================================== */
 
 .matches .match {
@@ -285,6 +310,9 @@ footer h1 {
     padding-right: 10px;
     width: 50%;
     text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(22, 22, 22, 1);
 }
 
 .match-details h3,
@@ -299,24 +327,16 @@ p {
 .match-details p {
     font-size: 16px;
 }
+/* ====================================================
+            ******** Blog Style *********
+                        End
+==================================================== */
 
 
 /* ====================================================
             ******** Hover Style *********
+                        Start
 ==================================================== */
-a:hover {
-    /* box-shadow: inset 50px 0 0 0 #54b3d6;  */
-    background-color: rgb(7, 7, 101);
-    color: #FFFFFF;
-    transition: 0.2s;
-}
-
-footer a:hover {
-    background-color: #FFFFFF;
-    color: black;
-    transition: 0.2s;
-}
-
 .top-banner:hover {
     animation: banner 0.5 timing-function delay iteration-count direction fill-mode;
 }
@@ -324,7 +344,8 @@ footer a:hover {
 .top-banner:hover .link-button {
     animation: shake 2s linear infinite;
 }
-.top-banner .link-button:hover{
+
+.top-banner .link-button:hover {
     animation-play-state: paused;
 }
 
@@ -361,23 +382,29 @@ footer a:hover {
         transform: rotateZ(0);
     }
 }
-
-
+a:hover {
+    background-color: #0070f0;
+    color: #FFFFFF;
+    transition: 0.2s;
+}
+footer a:hover {
+    background-color: #FFFFFF;
+    color: black;
+    transition: 0.2s;
+}
 
 /* ====================================================
-            ******** Media Queries *********
+            ******** Hover Style *********
+                        End
 ==================================================== */
 
 /* ====================================================
-            ******** Mobile Devices *********
+    ******** Media Queries For Mobile*********
+                    Start
 ==================================================== */
-
 
 @media only screen and (max-width:767px) {
 
-    /* ====================================================
-            ******** Top Banner *********
-==================================================== */
     .section-wrapper {
         width: 90%;
     }
@@ -420,10 +447,6 @@ footer a:hover {
         align-items: baseline;
     }
 
-    /* ====================================================
-            ******** Main Section *********
-==================================================== */
-
     .main-section {
         display: flex;
         flex-direction: column;
@@ -444,10 +467,6 @@ footer a:hover {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    /* ====================================================
-            ******** Footer *********
-==================================================== */
-
     .footer-links {
         flex-direction: column;
         align-items: center;
@@ -459,10 +478,14 @@ footer a:hover {
         font-size: 24px;
     }
 }
-
+/* ====================================================
+    ******** Media Queries For Mobile*********
+                     End
+==================================================== */
 
 /* ====================================================
-            ******** Tablet Devices *********
+   ******** Media Queries For Tablet Devices*********
+                      Start
 ==================================================== */
 @media only screen and (min-width:768px) and (max-width:991px) {
     .main-section {
@@ -495,3 +518,7 @@ footer a:hover {
     }
 
 }
+/* ====================================================
+   ******** Media Queries For Tablet Devices*********
+                      End
+==================================================== */
